@@ -6,68 +6,93 @@
 
 <body>
 
-    <h1>🎓 Campus Mood Bot</h1>
+    <h2>Campus Mood Bot</h2>
+
+    <p>Campus Mood Bot helps students with:</p>
+
+    <ul>
+        <li>Exams</li>
+        <li>Placements</li>
+        <li>Projects</li>
+        <li>Python</li>
+        <li>Motivation</li>
+    </ul>
 
     <hr>
 
-    <h3>Welcome Student!</h3>
+    <h2>Ask Your Question</h2>
 
-    <p>
-        Campus Mood Bot is your student assistant.
-        Ask questions about exams, placements, projects,
-        Python, motivation, and more.
-    </p>
-
-    <hr>
-
-    <h3>Ask a Question</h3>
+    <p>Enter Mood / Topic:</p>
 
     <form method="POST">
 
         <input
             type="text"
             name="message"
-            placeholder="Enter your mood or topic"
+            placeholder="Enter mood or topic"
             required
         >
 
-        <button type="submit">
-            Send
-        </button>
+        <button type="submit">Send</button>
 
     </form>
 
-    <br>
+    <hr>
 
-    <h3>🤖 Bot Reply</h3>
+    <h2>🤖 Bot Response</h2>
 
-    <p>{{ reply }}</p>
+    <fieldset>
+
+        <legend>Reply</legend>
+
+        <p>{{ reply }}</p>
+
+    </fieldset>
 
     <hr>
 
-    <h3>Things You Can Ask</h3>
+    <h2>Available Commands</h2>
 
-    <ul>
-        <li>hello</li>
-        <li>exam</li>
-        <li>placement</li>
-        <li>project</li>
-        <li>python</li>
-        <li>happy</li>
-        <li>sad</li>
-        <li>stressed</li>
-        <li>tired</li>
-        <li>bye</li>
-    </ul>
+    <table border="1">
+
+        <tr>
+            <th>Input</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>exam</td>
+            <td>Exam preparation tips</td>
+        </tr>
+
+        <tr>
+            <td>placement</td>
+            <td>Placement guidance</td>
+        </tr>
+
+        <tr>
+            <td>project</td>
+            <td>Project suggestions</td>
+        </tr>
+
+        <tr>
+            <td>python</td>
+            <td>Python learning tips</td>
+        </tr>
+
+        <tr>
+            <td>stressed</td>
+            <td>Stress management advice</td>
+        </tr>
+
+    </table>
 
     <hr>
 
-    <h3>About This Project</h3>
+    <h3>About Campus Mood Bot</h3>
 
     <p>
-        This project is developed using Python, Flask and HTML.
-        It demonstrates the use of functions, dictionaries,
-        user input and Flask routing.
+        A simple student assistant built using Python and Flask.
     </p>
 
 </body>
